@@ -1,0 +1,40 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel} % german
+\usepackage{tikz} % drawings
+\usepackage{wrapfig} % inline images
+\usepackage{amsmath,amssymb,amsthm} % advanced math
+\usepackage{xcolor} % colored text
+\usepackage{hyperref} % Make TOC clickable
+\newtheorem*{theorem}{Hypothese}
+\definecolor{turquoise}{RGB}{0,255,255}
+\usepackage{csquotes}
+\usepackage{graphicx}
+%\usepackage[left=3cm,right=3cm,top=3cm,bottom=3cm]{geometry}
+\renewcommand{\baselinestretch}{1.2} % line height
+
+\usepackage[citestyle=numeric,sorting=none]{biblatex}
+%\bibliographystyle{acm}
+\addbibresource{bib.bib}
+
+\title{Vier-Farben-Satz}
+\author{******** Nguyen}
+\date{Oktober 2019}
+
+\begin{document}
+\maketitle
+\newpage
+\tableofcontents
+\newpage
+% \listoffigures
+\textit{Hiermit versichere ich, die vorliegende Arbeit selbstständig und nur unter Zuhilfenahme der angegeben Quellen und Hilfsmittel angefertigt zu haben. Aus den angegebenen Materialien entnommene Inhalte und Zitate sind als solche kenntlich gemacht. Ich erkläre, dass ich zu diesem Thema nicht schon einmal eine solche Arbeit angefertigt habe.}
+
+\include{introduction}
+\include{graphs}
+\include{6-color}
+\include{5-color}
+\include{4-color}
+
+\printbibliography
+\end{document}
